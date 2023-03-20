@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A2600229C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
+		10A2600329C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
+		10A2600429C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
 		10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */; };
 		10DE861629C351B500517E4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861529C351B500517E4C /* ContentView.swift */; };
 		10DE861829C351B600517E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DE861729C351B600517E4C /* Assets.xcassets */; };
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10A2600129C8D4FA0037102A /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		10DE861029C351B500517E4C /* SwiftUI Resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Resources.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ResourcesApp.swift; sourceTree = "<group>"; };
 		10DE861529C351B500517E4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A2600029C8D4CB0037102A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10A2600129C8D4FA0037102A /* LinkView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		10DE860729C351B500517E4C = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,7 @@
 		10DE861229C351B500517E4C /* SwiftUI Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10A2600029C8D4CB0037102A /* Views */,
 				10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */,
 				10DE861529C351B500517E4C /* ContentView.swift */,
 				10DE861729C351B600517E4C /* Assets.xcassets */,
@@ -258,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DE861629C351B500517E4C /* ContentView.swift in Sources */,
+				10A2600229C8D4FA0037102A /* LinkView.swift in Sources */,
 				10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A2600329C8D4FA0037102A /* LinkView.swift in Sources */,
 				10DE862529C351B600517E4C /* SwiftUI_ResourcesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DE863129C351B600517E4C /* SwiftUI_ResourcesUITestsLaunchTests.swift in Sources */,
+				10A2600429C8D4FA0037102A /* LinkView.swift in Sources */,
 				10DE862F29C351B600517E4C /* SwiftUI_ResourcesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
