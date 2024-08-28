@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var sliderValue = "2.0"
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(spacing: 36) {
+                NavigationLink(destination: SliderView(value: $sliderValue)) {
+                    Text("Slider")
+                }
+                
+                NavigationLink(destination: CustomButtonView()) {
+                    Text("Custom Button Style")
+                }
+                
+                Spacer()
+            }
         }
-        .padding()
     }
 }
 

@@ -12,7 +12,7 @@ import SwiftUI
 
 struct SliderView: View {
     
-    @Binding var rating: String
+    @Binding var value: String
     @State private var dragValue: CGFloat = 0.3
     
     var body: some View {
@@ -46,12 +46,12 @@ struct SliderView: View {
     private func updateValue(with gesture: DragGesture.Value, in geometry: GeometryProxy) {
         let newValue = gesture.location.x / geometry.size.width
         dragValue = min(max(Double(newValue), 0), 1)
-        rating = String(format: "%.1f", dragValue * 10)
+        value = String(format: "%.1f", dragValue * 10)
     }
 }
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(rating: .constant("3"))
+        SliderView(value: .constant("3"))
     }
 }
