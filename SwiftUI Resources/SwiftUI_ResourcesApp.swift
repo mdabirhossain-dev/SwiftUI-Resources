@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUI_ResourcesApp: App {
+    @State private var rating = ""
     var body: some Scene {
         WindowGroup {
-            AsyncImageView()
+            SliderView(rating: $rating)
+//            AsyncImageView()
         }
     }
 }

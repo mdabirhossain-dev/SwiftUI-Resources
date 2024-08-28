@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1011BE4F2C7A416A00C2B1D0 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011BE4E2C7A416A00C2B1D0 /* SliderView.swift */; };
 		102AA24929C9EEA800A814B1 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AA24829C9EEA800A814B1 /* AsyncImageView.swift */; };
 		102AA24A29C9EEA800A814B1 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AA24829C9EEA800A814B1 /* AsyncImageView.swift */; };
 		102AA24B29C9EEA800A814B1 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AA24829C9EEA800A814B1 /* AsyncImageView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1011BE4E2C7A416A00C2B1D0 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		102AA24829C9EEA800A814B1 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		102AA24E29CA1D2F00A814B1 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
 		10A2600129C8D4FA0037102A /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1011BE4D2C7A413200C2B1D0 /* CustomSlider */ = {
+			isa = PBXGroup;
+			children = (
+				1011BE4E2C7A416A00C2B1D0 /* SliderView.swift */,
+			);
+			path = CustomSlider;
+			sourceTree = "<group>";
+		};
 		102AA24629C9EE7E00A814B1 /* Link */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		10A2600029C8D4CB0037102A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1011BE4D2C7A413200C2B1D0 /* CustomSlider */,
 				102AA24729C9EE8A00A814B1 /* AsyncImage */,
 				102AA24629C9EE7E00A814B1 /* Link */,
 			);
@@ -315,6 +326,7 @@
 				10DE861629C351B500517E4C /* ContentView.swift in Sources */,
 				102AA24F29CA1D2F00A814B1 /* ImageModifier.swift in Sources */,
 				10A2600229C8D4FA0037102A /* LinkView.swift in Sources */,
+				1011BE4F2C7A416A00C2B1D0 /* SliderView.swift in Sources */,
 				10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */,
 				102AA24929C9EEA800A814B1 /* AsyncImageView.swift in Sources */,
 			);
