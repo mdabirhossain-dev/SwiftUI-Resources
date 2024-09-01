@@ -20,10 +20,10 @@ struct NeumorphicButtonStyle: ButtonStyle {
                         .shadow(.inner(color: Color.white.opacity(configuration.isPressed ? 1 : 0), radius: 10, x: -10, y: -10))
                 )
             
-            configuration.label.font(.title)
+            configuration.label.font(.title3)
                 .opacity(configuration.isPressed ? 0.5 : 1)
         }
-        .frame(width: 200, height: 60)
+        .frame(width: 300, height: 60)
         .background(
             Color.grayBackground
                 .shadow(.drop(color: Color.white.opacity(configuration.isPressed ? 0 : 1), radius: 10, x: 0, y: -10))
@@ -31,5 +31,28 @@ struct NeumorphicButtonStyle: ButtonStyle {
             , in: .rect(cornerRadius: 12)
         )
         .animation(.none, value: configuration.isPressed)
+    }
+}
+
+struct PressableButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 14)
+                .frame(width: 306, height: configuration.isPressed ? 64 : 68)
+                .foregroundColor(.black)
+                .offset(y: configuration.isPressed ? 0.2 : 3)
+            
+            configuration.label.font(.title3).bold()
+                .offset(y: configuration.isPressed ? -0.5 : 0)
+                .foregroundColor(configuration.isPressed ? .white : .black)
+                .frame(width: 300, height: 60)
+                .background(configuration.isPressed ? .cyan : .pink.opacity(0.8), in: .rect(cornerRadius: 12))
+                .overlay {
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.white)
+                }
+        }
+        .animation(.spring, value: configuration.isPressed)
     }
 }

@@ -14,12 +14,19 @@ struct CustomButtonView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 36) {
-                Button("Gradient") {
+                Button("Neumorphic Button Style") {
                     print("NeumorphicButtonStyle")
                 }
                 .buttonStyle(NeumorphicButtonStyle())
-                .frame(width: 400, height: 100)
+                .frame(maxWidth: .infinity)
+                .frame(height: 300)
                 .background(Color.grayBackground.ignoresSafeArea(.all))
+                
+                
+                Button("Pressable Button Style") {
+                    
+                }
+                .buttonStyle(PressableButtonStyle())
             }
             .padding(.top)
         }
