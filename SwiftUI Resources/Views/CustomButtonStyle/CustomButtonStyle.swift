@@ -10,6 +10,7 @@
 
 import SwiftUI
 
+// MARK: - Neumorphic Button Style
 struct NeumorphicButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
@@ -34,6 +35,7 @@ struct NeumorphicButtonStyle: ButtonStyle {
     }
 }
 
+// MARK: - Pressable Button Style
 struct PressableButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
@@ -54,5 +56,78 @@ struct PressableButtonStyle: ButtonStyle {
                 }
         }
         .animation(.spring, value: configuration.isPressed)
+    }
+}
+
+
+// MARK: - Loading Button Style
+struct LoadingButtonStyle: View {
+    // MARK: - Properties
+    @State var spin = false
+    @State var isPressed = false
+    @State var next: CGFloat = 73
+    @State var hasBeenPressed = false
+    let startTitle: String
+    let endTitle: String
+    @Binding var reset: Bool
+    let action: () -> Void
+    
+    // MARK: - Body
+    var body: some View {
+        TextAnimation(startTitle: startTitle, endTitle: endTitle, next: $next, spin: $spin)
+            .frame(width: 300, height: 60)
+            .clipped()
+            .background(.primary, in: .rect(cornerRadius: 12))
+            .scaleEffect(isPressed ? 1.1 : 1)
+            .animation(.spring, value: isPressed)
+            .animation(.spring(duration: 1), value: next)
+            .gesture(dragGesture())
+    }
+    
+    func dragGesture() -> some Gesture {
+        DragGesture(minimumDistance: 0)
+            .onChanged { _ in
+                isPressed = true
+            }
+            .onEnded { _ in
+                action()
+                isPressed = false
+                if !hasBeenPressed {
+                    hasBeenPressed = true
+                    withAnimation(.linear(duration: 1).repeatForever(autoreverses: false)) {
+                        spin = true
+                    }
+                    next -= 73
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        next -= 73
+                    }
+                }
+            }
+    }
+}
+
+struct TextAnimation: View {
+    // MARK: - Properties
+    var startTitle: String
+    var endTitle: String
+    @Binding var next: CGFloat
+    @Binding var spin: Bool
+    
+    // MARK: - Body
+    var body: some View {
+        VStack(spacing: 50) {
+            Text(endTitle)
+            
+            Circle()
+                .trim(from: 0, to: 0.8)
+                .stroke(lineWidth: 3)
+                .frame(width: 25, height: 25)
+                .rotationEffect(.degrees(spin ? 360 : 0))
+            
+            Text(startTitle)
+        }
+        .bold()
+        .foregroundStyle(.gray)
+        .offset(y: -next)
     }
 }

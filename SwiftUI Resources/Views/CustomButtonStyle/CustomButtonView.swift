@@ -11,11 +11,12 @@
 import SwiftUI
 
 struct CustomButtonView: View {
+    @State private var reset = false
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(spacing: 36) {
+            VStack(spacing: 100) {
                 Button("Neumorphic Button Style") {
-                    print("NeumorphicButtonStyle")
+                    print("Neumorphic Button Style")
                 }
                 .buttonStyle(NeumorphicButtonStyle())
                 .frame(maxWidth: .infinity)
@@ -24,9 +25,13 @@ struct CustomButtonView: View {
                 
                 
                 Button("Pressable Button Style") {
-                    
+                    print("Pressable Button Style")
                 }
                 .buttonStyle(PressableButtonStyle())
+                
+                LoadingButtonStyle(startTitle: "Loading", endTitle: "Success", reset: $reset, action: {
+                    print("Loading Button Style")
+                })
             }
             .padding(.top)
         }
