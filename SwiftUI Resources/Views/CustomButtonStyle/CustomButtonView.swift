@@ -29,9 +29,16 @@ struct CustomButtonView: View {
                 }
                 .buttonStyle(PressableButtonStyle())
                 
+                
                 LoadingButtonStyle(startTitle: "Loading", endTitle: "Success", reset: $reset, action: {
                     print("Loading Button Style")
                 })
+                
+                
+                Button("3D Button Style") {
+                    print("3D Button Style")
+                }
+                .buttonStyle(ThreeDButtonStyle())
             }
             .padding(.top)
         }

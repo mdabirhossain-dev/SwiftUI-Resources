@@ -131,3 +131,30 @@ struct TextAnimation: View {
         .offset(y: -next)
     }
 }
+
+
+
+// MARK: - 3D Button Style
+struct ThreeDButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        ZStack {
+            let offset: CGFloat = 8
+            
+            RoundedRectangle(cornerRadius: 6)
+                .foregroundColor(Color(red: 62/255, green: 87/255, blue: 178/255))
+                .offset(y: offset)
+            
+            RoundedRectangle(cornerRadius: 6)
+                .foregroundColor(Color(red: 123/255, green: 152/255, blue: 255/255))
+                .offset(y: configuration.isPressed ? offset : 0)
+            
+            configuration.label
+                .offset(y: configuration.isPressed ? offset : 0)
+        }
+        .compositingGroup()
+        .shadow(radius: 6, y: 4)
+        .frame(width: 300, height: 60)
+        
+        
+    }
+}
