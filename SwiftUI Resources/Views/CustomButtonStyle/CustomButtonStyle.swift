@@ -41,7 +41,7 @@ struct PressableButtonStyle: ButtonStyle {
         ZStack {
             RoundedRectangle(cornerRadius: 14)
                 .frame(width: 306, height: configuration.isPressed ? 64 : 68)
-                .foregroundColor(.black)
+                .foregroundStyle(.black)
                 .offset(y: configuration.isPressed ? 0.2 : 3)
             
             configuration.label.font(.title3).bold()
@@ -52,7 +52,7 @@ struct PressableButtonStyle: ButtonStyle {
                 .overlay {
                     RoundedRectangle(cornerRadius: 12)
                         .stroke(lineWidth: 2)
-                        .foregroundColor(.white)
+                        .foregroundStyle(.white)
                 }
         }
         .animation(.spring, value: configuration.isPressed)
@@ -141,11 +141,11 @@ struct ThreeDButtonStyle: ButtonStyle {
             let offset: CGFloat = 8
             
             RoundedRectangle(cornerRadius: 6)
-                .foregroundColor(Color(red: 62/255, green: 87/255, blue: 178/255))
+                .foregroundStyle(Color(red: 62/255, green: 87/255, blue: 178/255))
                 .offset(y: offset)
             
             RoundedRectangle(cornerRadius: 6)
-                .foregroundColor(Color(red: 123/255, green: 152/255, blue: 255/255))
+                .foregroundStyle(Color(red: 123/255, green: 152/255, blue: 255/255))
                 .offset(y: configuration.isPressed ? offset : 0)
             
             configuration.label
@@ -154,7 +154,51 @@ struct ThreeDButtonStyle: ButtonStyle {
         .compositingGroup()
         .shadow(radius: 6, y: 4)
         .frame(width: 300, height: 60)
-        
-        
+    }
+}
+
+
+// MARK: - Gradient Button Style
+struct GradientButtonStyle: ButtonStyle {
+    let gradient = Gradient(colors: [.pink, .purple, .blue, .green, .yellow, .orange, .red])
+    @State private var isAnimating = false
+    func makeBody(configuration: Configuration) -> some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(AngularGradient.init(gradient: gradient, center: .center, angle: .degrees(isAnimating ? 360 : 0)), lineWidth: 14)
+                .frame(width: 210, height: 30)
+                .offset(y: 30)
+                .blur(radius: 30)
+            
+            configuration.label
+                .bold()
+                .foregroundStyle(.white)
+                .frame(width: 280, height: 60)
+                .background(Color.gradientButtonBackground, in: .rect(cornerRadius: 20))
+                .overlay (
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(AngularGradient.init(gradient: gradient, center: .center, angle: .degrees(isAnimating ? 360 : 0)), lineWidth: 3)
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(lineWidth: 4)
+                            .foregroundStyle(LinearGradient(colors: [.black, .black, .clear], startPoint: .top, endPoint: .bottom))
+                    }
+                )
+        }
+        .scaleEffect(configuration.isPressed ? 0.95 : 1)
+        .animation(.spring, value: configuration.isPressed)
+        .onAppear(perform: {
+            withAnimation(.linear(duration: 5).repeatForever(autoreverses: false)) {
+                isAnimating = true
+            }
+        })
+    }
+}
+
+
+struct CustomButtonView1_Previews: PreviewProvider {
+    static var previews: some View {
+        CustomButtonView()
     }
 }

@@ -39,6 +39,15 @@ struct CustomButtonView: View {
                     print("3D Button Style")
                 }
                 .buttonStyle(ThreeDButtonStyle())
+                
+                
+                Button("Gradient Button Style") {
+                    print("Gradient Button Style")
+                }
+                .buttonStyle(GradientButtonStyle())
+                .frame(maxWidth: .infinity)
+                .frame(height: 300)
+                .background(Color.black.ignoresSafeArea(.all))
             }
             .padding(.top)
         }

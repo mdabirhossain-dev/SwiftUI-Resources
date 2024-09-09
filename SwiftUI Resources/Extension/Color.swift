@@ -12,5 +12,6 @@ import SwiftUI
 
 extension Color {
     static let grayBackground = Color(red: 231/255, green: 231/255, blue: 231/255)
+    static let gradientButtonBackground = Color("gradientButtonBackground")
 }
 
