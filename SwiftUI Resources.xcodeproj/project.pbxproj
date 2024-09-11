@@ -24,6 +24,8 @@
 		10A2600229C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
 		10A2600329C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
 		10A2600429C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
+		10A3765F2C91887900018F74 /* FloatingTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3765E2C91887900018F74 /* FloatingTitleTextField.swift */; };
+		10A376612C918AD800018F74 /* EmptyChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A376602C918AD800018F74 /* EmptyChecking.swift */; };
 		10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */; };
 		10DE861629C351B500517E4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861529C351B500517E4C /* ContentView.swift */; };
 		10DE861829C351B600517E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DE861729C351B600517E4C /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		106A62EC2C912DB600F2DCAE /* LoadingAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimationView.swift; sourceTree = "<group>"; };
 		10941BB52C8CD315001F39E1 /* CircleToLineAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleToLineAnimationView.swift; sourceTree = "<group>"; };
 		10A2600129C8D4FA0037102A /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		10A3765E2C91887900018F74 /* FloatingTitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTitleTextField.swift; sourceTree = "<group>"; };
+		10A376602C918AD800018F74 /* EmptyChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyChecking.swift; sourceTree = "<group>"; };
 		10DE861029C351B500517E4C /* SwiftUI Resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Resources.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ResourcesApp.swift; sourceTree = "<group>"; };
 		10DE861529C351B500517E4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				1034754A2C7FABBC00B682BF /* Color.swift */,
+				10A376602C918AD800018F74 /* EmptyChecking.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				106A62E22C91272500F2DCAE /* CollapsibleSearchView.swift */,
+				10A3765E2C91887900018F74 /* FloatingTitleTextField.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -412,6 +418,7 @@
 				106A62ED2C912DB600F2DCAE /* LoadingAnimationView.swift in Sources */,
 				10DE861629C351B500517E4C /* ContentView.swift in Sources */,
 				106A62E82C912B6B00F2DCAE /* TextFieldsView.swift in Sources */,
+				10A3765F2C91887900018F74 /* FloatingTitleTextField.swift in Sources */,
 				10941BB62C8CD315001F39E1 /* CircleToLineAnimationView.swift in Sources */,
 				103475482C7FA52800B682BF /* CustomButtonStyle.swift in Sources */,
 				102AA24F29CA1D2F00A814B1 /* ImageModifier.swift in Sources */,
@@ -419,6 +426,7 @@
 				106A62E32C91272500F2DCAE /* CollapsibleSearchView.swift in Sources */,
 				1011BE4F2C7A416A00C2B1D0 /* SliderView.swift in Sources */,
 				10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */,
+				10A376612C918AD800018F74 /* EmptyChecking.swift in Sources */,
 				102AA24929C9EEA800A814B1 /* AsyncImageView.swift in Sources */,
 				1034754B2C7FABBC00B682BF /* Color.swift in Sources */,
 			);

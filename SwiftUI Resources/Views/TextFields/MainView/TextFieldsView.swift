@@ -11,9 +11,19 @@
 import SwiftUI
 
 struct TextFieldsView: View {
+    // MARK: - Properties
+    @State private var firstName = ""
+    @State private var lastName = ""
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             CollapsibleSearchView()
+            
+            VStack {
+                FloatingTitleTextField(title: "First Name", text: $firstName)
+                FloatingTitleTextField(title: "Last Name", text: $lastName)
+            }
+            .padding(.horizontal)
         }
     }
 }
