@@ -22,6 +22,11 @@ struct ContentView: View {
                     Text("Custom Button Style")
                 }
                 
+                
+                NavigationLink(destination: TextFieldsView()) {
+                    Text("Text Fields")
+                }
+                
                 Spacer()
             }
         }

@@ -17,6 +17,8 @@
 		103475462C7FA4DC00B682BF /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103475452C7FA4DC00B682BF /* CustomButtonView.swift */; };
 		103475482C7FA52800B682BF /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103475472C7FA52800B682BF /* CustomButtonStyle.swift */; };
 		1034754B2C7FABBC00B682BF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034754A2C7FABBC00B682BF /* Color.swift */; };
+		106A62E32C91272500F2DCAE /* CollapsibleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A62E22C91272500F2DCAE /* CollapsibleSearchView.swift */; };
+		106A62E82C912B6B00F2DCAE /* TextFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A62E72C912B6B00F2DCAE /* TextFieldsView.swift */; };
 		10941BB62C8CD315001F39E1 /* CircleToLineAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10941BB52C8CD315001F39E1 /* CircleToLineAnimationView.swift */; };
 		10A2600229C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
 		10A2600329C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
@@ -54,6 +56,8 @@
 		103475452C7FA4DC00B682BF /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		103475472C7FA52800B682BF /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		1034754A2C7FABBC00B682BF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		106A62E22C91272500F2DCAE /* CollapsibleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleSearchView.swift; sourceTree = "<group>"; };
+		106A62E72C912B6B00F2DCAE /* TextFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsView.swift; sourceTree = "<group>"; };
 		10941BB52C8CD315001F39E1 /* CircleToLineAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleToLineAnimationView.swift; sourceTree = "<group>"; };
 		10A2600129C8D4FA0037102A /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		10DE861029C351B500517E4C /* SwiftUI Resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Resources.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +155,31 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		106A62E12C9126FE00F2DCAE /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				106A62E52C912B3000F2DCAE /* MainView */,
+				106A62E42C912B2600F2DCAE /* SubView */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		106A62E42C912B2600F2DCAE /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				106A62E22C91272500F2DCAE /* CollapsibleSearchView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		106A62E52C912B3000F2DCAE /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				106A62E72C912B6B00F2DCAE /* TextFieldsView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		10941BB42C8CD2EA001F39E1 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +191,7 @@
 		10A2600029C8D4CB0037102A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				106A62E12C9126FE00F2DCAE /* TextFields */,
 				10941BB42C8CD2EA001F39E1 /* Animations */,
 				103475442C7FA4BF00B682BF /* CustomButtonStyle */,
 				1011BE4D2C7A413200C2B1D0 /* CustomSlider */,
@@ -361,10 +391,12 @@
 			files = (
 				103475462C7FA4DC00B682BF /* CustomButtonView.swift in Sources */,
 				10DE861629C351B500517E4C /* ContentView.swift in Sources */,
+				106A62E82C912B6B00F2DCAE /* TextFieldsView.swift in Sources */,
 				10941BB62C8CD315001F39E1 /* CircleToLineAnimationView.swift in Sources */,
 				103475482C7FA52800B682BF /* CustomButtonStyle.swift in Sources */,
 				102AA24F29CA1D2F00A814B1 /* ImageModifier.swift in Sources */,
 				10A2600229C8D4FA0037102A /* LinkView.swift in Sources */,
+				106A62E32C91272500F2DCAE /* CollapsibleSearchView.swift in Sources */,
 				1011BE4F2C7A416A00C2B1D0 /* SliderView.swift in Sources */,
 				10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */,
 				102AA24929C9EEA800A814B1 /* AsyncImageView.swift in Sources */,
