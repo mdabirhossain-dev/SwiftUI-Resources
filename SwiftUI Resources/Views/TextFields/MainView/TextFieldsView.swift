@@ -18,6 +18,8 @@ struct TextFieldsView: View {
     }
 }
 
-#Preview {
-    TextFieldsView()
+struct TextFieldsView_Previews: PreviewProvider {
+    static var previews: some View {
+        TextFieldsView()
+    }
 }

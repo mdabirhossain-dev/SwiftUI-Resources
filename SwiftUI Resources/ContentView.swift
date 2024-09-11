@@ -23,6 +23,11 @@ struct ContentView: View {
                 }
                 
                 
+                NavigationLink(destination: LoadingAnimationView()) {
+                    Text("Loading Animations")
+                }
+                
+                
                 NavigationLink(destination: TextFieldsView()) {
                     Text("Text Fields")
                 }

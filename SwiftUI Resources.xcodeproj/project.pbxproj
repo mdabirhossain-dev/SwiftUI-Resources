@@ -19,6 +19,7 @@
 		1034754B2C7FABBC00B682BF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034754A2C7FABBC00B682BF /* Color.swift */; };
 		106A62E32C91272500F2DCAE /* CollapsibleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A62E22C91272500F2DCAE /* CollapsibleSearchView.swift */; };
 		106A62E82C912B6B00F2DCAE /* TextFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A62E72C912B6B00F2DCAE /* TextFieldsView.swift */; };
+		106A62ED2C912DB600F2DCAE /* LoadingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A62EC2C912DB600F2DCAE /* LoadingAnimationView.swift */; };
 		10941BB62C8CD315001F39E1 /* CircleToLineAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10941BB52C8CD315001F39E1 /* CircleToLineAnimationView.swift */; };
 		10A2600229C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
 		10A2600329C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
@@ -58,6 +59,7 @@
 		1034754A2C7FABBC00B682BF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		106A62E22C91272500F2DCAE /* CollapsibleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleSearchView.swift; sourceTree = "<group>"; };
 		106A62E72C912B6B00F2DCAE /* TextFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsView.swift; sourceTree = "<group>"; };
+		106A62EC2C912DB600F2DCAE /* LoadingAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimationView.swift; sourceTree = "<group>"; };
 		10941BB52C8CD315001F39E1 /* CircleToLineAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleToLineAnimationView.swift; sourceTree = "<group>"; };
 		10A2600129C8D4FA0037102A /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		10DE861029C351B500517E4C /* SwiftUI Resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Resources.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,10 +182,27 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
-		10941BB42C8CD2EA001F39E1 /* Animations */ = {
+		106A62E92C912D7900F2DCAE /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				106A62EC2C912DB600F2DCAE /* LoadingAnimationView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		106A62EA2C912D8300F2DCAE /* SubView */ = {
 			isa = PBXGroup;
 			children = (
 				10941BB52C8CD315001F39E1 /* CircleToLineAnimationView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		10941BB42C8CD2EA001F39E1 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				106A62E92C912D7900F2DCAE /* MainView */,
+				106A62EA2C912D8300F2DCAE /* SubView */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -390,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				103475462C7FA4DC00B682BF /* CustomButtonView.swift in Sources */,
+				106A62ED2C912DB600F2DCAE /* LoadingAnimationView.swift in Sources */,
 				10DE861629C351B500517E4C /* ContentView.swift in Sources */,
 				106A62E82C912B6B00F2DCAE /* TextFieldsView.swift in Sources */,
 				10941BB62C8CD315001F39E1 /* CircleToLineAnimationView.swift in Sources */,
