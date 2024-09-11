@@ -46,11 +46,11 @@ struct CollapsibleSearchView: View {
                 }
                 .padding(.leading)
             }
-            .frame(width: isShow ? 300 : 50, height: 50)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(maxWidth: isShow ? .infinity : 50, maxHeight: 50, alignment: .leading)
+//            .frame(maxWidth: .infinity, alignment: .leading)
             .frame(height: 70)
             .clipped()
-            .padding(.leading, 45)
+            .padding(.horizontal, 45)
             
         }
     }
