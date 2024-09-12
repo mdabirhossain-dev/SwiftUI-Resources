@@ -26,6 +26,8 @@
 		10A2600429C8D4FA0037102A /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2600129C8D4FA0037102A /* LinkView.swift */; };
 		10A3765F2C91887900018F74 /* FloatingTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3765E2C91887900018F74 /* FloatingTitleTextField.swift */; };
 		10A376612C918AD800018F74 /* EmptyChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A376602C918AD800018F74 /* EmptyChecking.swift */; };
+		10AE60A52C930F6600A74206 /* TextTypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE60A42C930F6600A74206 /* TextTypingView.swift */; };
+		10AE60A72C9312A500A74206 /* TextStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE60A62C9312A500A74206 /* TextStylesView.swift */; };
 		10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */; };
 		10DE861629C351B500517E4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861529C351B500517E4C /* ContentView.swift */; };
 		10DE861829C351B600517E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DE861729C351B600517E4C /* Assets.xcassets */; };
@@ -66,6 +68,8 @@
 		10A2600129C8D4FA0037102A /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		10A3765E2C91887900018F74 /* FloatingTitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTitleTextField.swift; sourceTree = "<group>"; };
 		10A376602C918AD800018F74 /* EmptyChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyChecking.swift; sourceTree = "<group>"; };
+		10AE60A42C930F6600A74206 /* TextTypingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTypingView.swift; sourceTree = "<group>"; };
+		10AE60A62C9312A500A74206 /* TextStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStylesView.swift; sourceTree = "<group>"; };
 		10DE861029C351B500517E4C /* SwiftUI Resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Resources.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ResourcesApp.swift; sourceTree = "<group>"; };
 		10DE861529C351B500517E4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 		10A2600029C8D4CB0037102A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10AE60A12C930ED600A74206 /* TextStyles */,
 				106A62E12C9126FE00F2DCAE /* TextFields */,
 				10941BB42C8CD2EA001F39E1 /* Animations */,
 				103475442C7FA4BF00B682BF /* CustomButtonStyle */,
@@ -224,6 +229,31 @@
 				102AA24629C9EE7E00A814B1 /* Link */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		10AE60A12C930ED600A74206 /* TextStyles */ = {
+			isa = PBXGroup;
+			children = (
+				10AE60A22C930EE100A74206 /* MainView */,
+				10AE60A32C930EE700A74206 /* SubView */,
+			);
+			path = TextStyles;
+			sourceTree = "<group>";
+		};
+		10AE60A22C930EE100A74206 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				10AE60A62C9312A500A74206 /* TextStylesView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		10AE60A32C930EE700A74206 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				10AE60A42C930F6600A74206 /* TextTypingView.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 		10DE860729C351B500517E4C = {
@@ -424,9 +454,11 @@
 				102AA24F29CA1D2F00A814B1 /* ImageModifier.swift in Sources */,
 				10A2600229C8D4FA0037102A /* LinkView.swift in Sources */,
 				106A62E32C91272500F2DCAE /* CollapsibleSearchView.swift in Sources */,
+				10AE60A52C930F6600A74206 /* TextTypingView.swift in Sources */,
 				1011BE4F2C7A416A00C2B1D0 /* SliderView.swift in Sources */,
 				10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */,
 				10A376612C918AD800018F74 /* EmptyChecking.swift in Sources */,
+				10AE60A72C9312A500A74206 /* TextStylesView.swift in Sources */,
 				102AA24929C9EEA800A814B1 /* AsyncImageView.swift in Sources */,
 				1034754B2C7FABBC00B682BF /* Color.swift in Sources */,
 			);

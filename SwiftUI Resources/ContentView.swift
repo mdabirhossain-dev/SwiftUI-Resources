@@ -32,6 +32,13 @@ struct ContentView: View {
                     Text("Text Fields")
                 }
                 
+                
+                NavigationLink(destination: TextStylesView()) {
+                    Text("Text Styles")
+                }
+                
+                
+                
                 Spacer()
             }
         }
