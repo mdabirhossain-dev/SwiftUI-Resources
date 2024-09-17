@@ -28,6 +28,7 @@
 		10A376612C918AD800018F74 /* EmptyChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A376602C918AD800018F74 /* EmptyChecking.swift */; };
 		10AE60A52C930F6600A74206 /* TextTypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE60A42C930F6600A74206 /* TextTypingView.swift */; };
 		10AE60A72C9312A500A74206 /* TextStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE60A62C9312A500A74206 /* TextStylesView.swift */; };
+		10C258032C99069F00C194BC /* ParallaxEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C258022C99069F00C194BC /* ParallaxEffectView.swift */; };
 		10DE861429C351B500517E4C /* SwiftUI_ResourcesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */; };
 		10DE861629C351B500517E4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE861529C351B500517E4C /* ContentView.swift */; };
 		10DE861829C351B600517E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DE861729C351B600517E4C /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		10A376602C918AD800018F74 /* EmptyChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyChecking.swift; sourceTree = "<group>"; };
 		10AE60A42C930F6600A74206 /* TextTypingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTypingView.swift; sourceTree = "<group>"; };
 		10AE60A62C9312A500A74206 /* TextStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStylesView.swift; sourceTree = "<group>"; };
+		10C258022C99069F00C194BC /* ParallaxEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxEffectView.swift; sourceTree = "<group>"; };
 		10DE861029C351B500517E4C /* SwiftUI Resources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Resources.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DE861329C351B500517E4C /* SwiftUI_ResourcesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ResourcesApp.swift; sourceTree = "<group>"; };
 		10DE861529C351B500517E4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		10A2600029C8D4CB0037102A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10C257FF2C99065800C194BC /* Carosel */,
 				10AE60A12C930ED600A74206 /* TextStyles */,
 				106A62E12C9126FE00F2DCAE /* TextFields */,
 				10941BB42C8CD2EA001F39E1 /* Animations */,
@@ -252,6 +255,30 @@
 			isa = PBXGroup;
 			children = (
 				10AE60A42C930F6600A74206 /* TextTypingView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		10C257FF2C99065800C194BC /* Carosel */ = {
+			isa = PBXGroup;
+			children = (
+				10C258002C99066E00C194BC /* MainView */,
+				10C258012C99067700C194BC /* SubView */,
+			);
+			path = Carosel;
+			sourceTree = "<group>";
+		};
+		10C258002C99066E00C194BC /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				10C258022C99069F00C194BC /* ParallaxEffectView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		10C258012C99067700C194BC /* SubView */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -452,6 +479,7 @@
 				10941BB62C8CD315001F39E1 /* CircleToLineAnimationView.swift in Sources */,
 				103475482C7FA52800B682BF /* CustomButtonStyle.swift in Sources */,
 				102AA24F29CA1D2F00A814B1 /* ImageModifier.swift in Sources */,
+				10C258032C99069F00C194BC /* ParallaxEffectView.swift in Sources */,
 				10A2600229C8D4FA0037102A /* LinkView.swift in Sources */,
 				106A62E32C91272500F2DCAE /* CollapsibleSearchView.swift in Sources */,
 				10AE60A52C930F6600A74206 /* TextTypingView.swift in Sources */,
